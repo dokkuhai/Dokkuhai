@@ -441,6 +441,12 @@ p {
     flex-shrink: 0;
 }
 
+.university-logo-img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
 .university-info h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;

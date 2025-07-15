@@ -6,13 +6,21 @@ const body = document.body;
 const currentTheme = localStorage.getItem('theme') || 'light';
 body.setAttribute('data-theme', currentTheme);
 
-// Update theme toggle icon
+// Update theme toggle icon and profile photo
 function updateThemeIcon() {
     const icon = themeToggle.querySelector('i');
+    const profilePhoto = document.getElementById('profile-photo');
+    
     if (body.getAttribute('data-theme') === 'dark') {
         icon.className = 'fas fa-sun';
+        if (profilePhoto) {
+            profilePhoto.src = 'assets/profile-photo-dark.jpg';
+        }
     } else {
         icon.className = 'fas fa-moon';
+        if (profilePhoto) {
+            profilePhoto.src = 'assets/profile-photo-light.jpg';
+        }
     }
 }
 
