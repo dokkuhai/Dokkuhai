@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website of a Fresher Fullstack Developer showcasing skills, projects, and achievements">
+    <meta name="keywords" content="fullstack developer, portfolio, web development, programming, projects">
+    <meta name="author" content="Your Name">
+    
+    <title>Your Name - Fullstack Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#university" class="nav-link">University</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle-container">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <div class="typing-container">
+                    <h2>I'm a <span class="typing-text" id="typing-text"></span></h2>
+                </div>
+                <p class="hero-description">
+                    Passionate fresher fullstack developer with a strong foundation in modern web technologies. 
+                    Ready to contribute to innovative projects and grow in the tech industry.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div class="about-text">
+                    <h3>Hello! I'm a Fresher Fullstack Developer</h3>
+                    <p>
+                        I'm passionate about creating innovative web applications and solving complex problems through code. 
+                        As a recent graduate, I bring fresh perspectives and enthusiasm to every project I work on.
+                    </p>
+                    <p>
+                        My journey in programming started during my university years, where I discovered my love for both 
+                        frontend and backend development. I enjoy the entire process of building applications from conception 
+                        to deployment.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>10+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Technologies Mastered</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Commitment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- University Section -->
+    <section id="university" class="university">
+        <div class="container">
+            <h2 class="section-title">University</h2>
+            <div class="university-content">
+                <div class="university-card">
+                    <div class="university-logo">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="university-info">
+                        <h3>Your University Name</h3>
+                        <p class="degree">Bachelor of Science in Computer Science</p>
+                        <p class="duration">2020 - 2024</p>
+                        <div class="university-details">
+                            <p><strong>GPA:</strong> 3.8/4.0</p>
+                            <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Systems, Web Development, Software Engineering</p>
+                            <p><strong>Activities:</strong> Programming Club, Hackathons, Technical Events</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>Version Control</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-gitlab"></i>
+                    </div>
+                    <h3>GitLab</h3>
+                    <p>CI/CD Pipeline</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3>Java</h3>
+                    <p>Backend Development</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>C/C++</h3>
+                    <p>System Programming</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>.NET</h3>
+                    <p>Web Applications</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-hashtag"></i>
+                    </div>
+                    <h3>C#</h3>
+                    <p>Desktop & Web Apps</p>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3>Kotlin</h3>
+                    <p>Mobile Development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Website</h3>
+                        <p>Full-stack e-commerce platform built with modern web technologies featuring user authentication, shopping cart, and payment integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Mobile-first task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Material UI</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Visualization Dashboard</h3>
+                        <p>Interactive dashboard for data visualization with real-time charts, filtering capabilities, and export functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Web Development Certification</h3>
+                        <p>Completed comprehensive web development course covering HTML, CSS, JavaScript, and modern frameworks.</p>
+                        <span class="certificate-issuer">Online Platform</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Java Programming</h3>
+                        <p>Advanced Java programming certification including OOP concepts, data structures, and algorithms.</p>
+                        <span class="certificate-issuer">Tech Institute</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Database Management</h3>
+                        <p>Database design and management certification covering SQL, normalization, and optimization.</p>
+                        <span class="certificate-issuer">University Course</span>
+                    </div>
+                </div>
+                
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Mobile App Development</h3>
+                        <p>Android development certification using Kotlin and modern Android development practices.</p>
+                        <span class="certificate-issuer">Google Developers</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="resume-content">
+                <h2 class="section-title">Resume</h2>
+                <p>Download my resume to learn more about my experience, skills, and achievements.</p>
+                <a href="assets/resume.pdf" class="btn btn-primary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>your.email@example.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Your City, Country</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+                <p>Built with ❤️ using HTML, CSS, and JavaScript</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
