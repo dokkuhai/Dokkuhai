@@ -30,28 +30,39 @@
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-translate="nav-home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" data-translate="nav-about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#university" class="nav-link">University</a>
+                    <a href="#university" class="nav-link" data-translate="nav-university">University</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link" data-translate="nav-projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#certificates" class="nav-link">Certificates</a>
+                    <a href="#certificates" class="nav-link" data-translate="nav-certificates">Certificates</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a>
                 </li>
             </ul>
             <div class="nav-toggle-container">
+                <div class="language-switcher">
+                    <button class="language-toggle" id="language-toggle">
+                        <i class="fas fa-globe"></i>
+                        <span id="current-language">EN</span>
+                    </button>
+                    <div class="language-dropdown" id="language-dropdown">
+                        <button class="language-option" data-lang="en">English</button>
+                        <button class="language-option" data-lang="vi">Tiếng Việt</button>
+                        <button class="language-option" data-lang="ja">日本語</button>
+                    </div>
+                </div>
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -68,17 +79,17 @@
     <section id="home" class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h1 data-translate="hero-greeting">Hi, I'm <span class="highlight">Your Name</span></h1>
                 <div class="typing-container">
-                    <h2>I'm a <span class="typing-text" id="typing-text"></span></h2>
+                    <h2><span data-translate="hero-im">I'm a</span> <span class="typing-text" id="typing-text"></span></h2>
                 </div>
-                <p class="hero-description">
+                <p class="hero-description" data-translate="hero-description">
                     Passionate fresher fullstack developer with a strong foundation in modern web technologies. 
                     Ready to contribute to innovative projects and grow in the tech industry.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary" data-translate="btn-view-work">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-translate="btn-get-in-touch">Get In Touch</a>
                 </div>
             </div>
         </div>
@@ -90,18 +101,18 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-translate="about-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
                     <img src="assets/profile-photo-light.jpg" alt="Profile Photo" class="profile-photo" id="profile-photo">
                 </div>
                 <div class="about-text">
-                    <h3>Hello! I'm a Fresher Fullstack Developer</h3>
-                    <p>
+                    <h3 data-translate="about-subtitle">Hello! I'm a Fresher Fullstack Developer</h3>
+                    <p data-translate="about-text1">
                         I'm passionate about creating innovative web applications and solving complex problems through code. 
                         As a recent graduate, I bring fresh perspectives and enthusiasm to every project I work on.
                     </p>
-                    <p>
+                    <p data-translate="about-text2">
                         My journey in programming started during my university years, where I discovered my love for both 
                         frontend and backend development. I enjoy the entire process of building applications from conception 
                         to deployment.
@@ -128,7 +139,7 @@
     <!-- University Section -->
     <section id="university" class="university">
         <div class="container">
-            <h2 class="section-title">University</h2>
+            <h2 class="section-title" data-translate="university-title">University</h2>
             <div class="university-content">
                 <div class="university-card">
                     <div class="university-logo">
@@ -152,7 +163,7 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title" data-translate="skills-title">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-item">
                     <div class="skill-icon">
@@ -245,7 +256,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <h2 class="section-title" data-translate="projects-title">Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -328,7 +339,7 @@
     <!-- Certificates Section -->
     <section id="certificates" class="certificates">
         <div class="container">
-            <h2 class="section-title">Certificates</h2>
+            <h2 class="section-title" data-translate="certificates-title">Certificates</h2>
             <div class="certificates-grid">
                 <div class="certificate-card">
                     <div class="certificate-image">

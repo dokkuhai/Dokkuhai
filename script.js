@@ -1,3 +1,141 @@
+// Multilingual Support
+const translations = {
+    en: {
+        'nav-home': 'Home',
+        'nav-about': 'About',
+        'nav-university': 'University',
+        'nav-skills': 'Skills',
+        'nav-projects': 'Projects',
+        'nav-certificates': 'Certificates',
+        'nav-contact': 'Contact',
+        'hero-greeting': 'Hi, I\'m <span class="highlight">Your Name</span>',
+        'hero-im': 'I\'m a',
+        'hero-description': 'Passionate fresher fullstack developer with a strong foundation in modern web technologies. Ready to contribute to innovative projects and grow in the tech industry.',
+        'btn-view-work': 'View My Work',
+        'btn-get-in-touch': 'Get In Touch',
+        'about-title': 'About Me',
+        'about-subtitle': 'Hello! I\'m a Fresher Fullstack Developer',
+        'about-text1': 'I\'m passionate about creating innovative web applications and solving complex problems through code. As a recent graduate, I bring fresh perspectives and enthusiasm to every project I work on.',
+        'about-text2': 'My journey in programming started during my university years, where I discovered my love for both frontend and backend development. I enjoy the entire process of building applications from conception to deployment.',
+        'university-title': 'University',
+        'skills-title': 'Skills & Technologies',
+        'projects-title': 'Projects',
+        'certificates-title': 'Certificates',
+        'typing-phrases': ['Fullstack Developer', 'Problem Solver', 'Code Enthusiast', 'Tech Innovator', 'Creative Thinker']
+    },
+    vi: {
+        'nav-home': 'Trang chủ',
+        'nav-about': 'Về tôi',
+        'nav-university': 'Trường đại học',
+        'nav-skills': 'Kỹ năng',
+        'nav-projects': 'Dự án',
+        'nav-certificates': 'Chứng chỉ',
+        'nav-contact': 'Liên hệ',
+        'hero-greeting': 'Xin chào, tôi là <span class="highlight">Tên của bạn</span>',
+        'hero-im': 'Tôi là',
+        'hero-description': 'Lập trình viên fullstack mới với nền tảng vững chắc về công nghệ web hiện đại. Sẵn sàng đóng góp vào các dự án sáng tạo và phát triển trong ngành công nghệ.',
+        'btn-view-work': 'Xem công việc của tôi',
+        'btn-get-in-touch': 'Liên hệ',
+        'about-title': 'Về tôi',
+        'about-subtitle': 'Xin chào! Tôi là lập trình viên Fullstack mới',
+        'about-text1': 'Tôi đam mê tạo ra các ứng dụng web sáng tạo và giải quyết các vấn đề phức tạp thông qua code. Là một sinh viên vừa tốt nghiệp, tôi mang đến góc nhìn mới mẻ và sự nhiệt huyết cho mọi dự án mà tôi tham gia.',
+        'about-text2': 'Hành trình lập trình của tôi bắt đầu trong những năm đại học, nơi tôi khám phá tình yêu của mình với cả frontend và backend development. Tôi thích toàn bộ quá trình xây dựng ứng dụng từ ý tưởng đến triển khai.',
+        'university-title': 'Trường đại học',
+        'skills-title': 'Kỹ năng & Công nghệ',
+        'projects-title': 'Dự án',
+        'certificates-title': 'Chứng chỉ',
+        'typing-phrases': ['Lập trình viên Fullstack', 'Người giải quyết vấn đề', 'Người đam mê code', 'Nhà đổi mới công nghệ', 'Người tư duy sáng tạo']
+    },
+    ja: {
+        'nav-home': 'ホーム',
+        'nav-about': '私について',
+        'nav-university': '大学',
+        'nav-skills': 'スキル',
+        'nav-projects': 'プロジェクト',
+        'nav-certificates': '証明書',
+        'nav-contact': 'お問い合わせ',
+        'hero-greeting': 'こんにちは、私は<span class="highlight">あなたの名前</span>です',
+        'hero-im': '私は',
+        'hero-description': 'モダンなウェブ技術に強い基盤を持つ情熱的な新人フルスタック開発者です。革新的なプロジェクトに貢献し、技術業界で成長する準備ができています。',
+        'btn-view-work': '私の作品を見る',
+        'btn-get-in-touch': 'お問い合わせ',
+        'about-title': '私について',
+        'about-subtitle': 'こんにちは！私は新人フルスタック開発者です',
+        'about-text1': '私は革新的なウェブアプリケーションの作成とコードを通じた複雑な問題の解決に情熱を持っています。最近の卒業生として、私が取り組むすべてのプロジェクトに新鮮な視点と熱意をもたらします。',
+        'about-text2': '私のプログラミングの旅は大学時代に始まり、そこでフロントエンドとバックエンドの両方の開発への愛を発見しました。構想から展開まで、アプリケーションを構築する全過程を楽しんでいます。',
+        'university-title': '大学',
+        'skills-title': 'スキル＆テクノロジー',
+        'projects-title': 'プロジェクト',
+        'certificates-title': '証明書',
+        'typing-phrases': ['フルスタック開発者', '問題解決者', 'コード愛好家', '技術革新者', '創造的思考者']
+    }
+};
+
+let currentLanguage = localStorage.getItem('language') || 'en';
+
+function translatePage(lang) {
+    const elements = document.querySelectorAll('[data-translate]');
+    elements.forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang] && translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+        }
+    });
+    
+    // Update typing phrases
+    phrases = translations[lang]['typing-phrases'] || phrases;
+    
+    // Update language indicator
+    const languageIndicator = document.getElementById('current-language');
+    if (languageIndicator) {
+        languageIndicator.textContent = lang.toUpperCase();
+    }
+    
+    // Update active language option
+    document.querySelectorAll('.language-option').forEach(option => {
+        option.classList.remove('active');
+        if (option.getAttribute('data-lang') === lang) {
+            option.classList.add('active');
+        }
+    });
+    
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+}
+
+// Initialize language functionality when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Language Toggle Functionality
+    const languageToggle = document.getElementById('language-toggle');
+    const languageDropdown = document.getElementById('language-dropdown');
+
+    if (languageToggle && languageDropdown) {
+        languageToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            languageDropdown.classList.toggle('show');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.language-switcher')) {
+                languageDropdown.classList.remove('show');
+            }
+        });
+
+        // Language option selection
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.addEventListener('click', (e) => {
+                const lang = e.target.getAttribute('data-lang');
+                translatePage(lang);
+                languageDropdown.classList.remove('show');
+            });
+        });
+    }
+
+    // Initialize with saved language
+    translatePage(currentLanguage);
+});
+
 // Theme Toggle Functionality
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
@@ -56,7 +194,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // Typing Animation
 const typingText = document.getElementById('typing-text');
-const phrases = [
+let phrases = translations[currentLanguage]['typing-phrases'] || [
     'Fullstack Developer',
     'Problem Solver',
     'Code Enthusiast',
@@ -102,12 +240,15 @@ typeWriter();
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+        const href = this.getAttribute('href');
+        if (href && href !== '#') {
+            const target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
         }
     });
 });
@@ -146,7 +287,7 @@ function updateActiveLink() {
     
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
+        if (current && link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
         }
     });

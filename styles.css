@@ -233,6 +233,72 @@ p {
     gap: 1rem;
 }
 
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+}
+
+.language-toggle {
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.language-toggle:hover {
+    background: var(--bg-secondary);
+}
+
+.language-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: var(--transition);
+    z-index: 1000;
+    min-width: 120px;
+}
+
+.language-dropdown.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.language-option {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 0.9rem;
+}
+
+.language-option:hover {
+    background: var(--bg-secondary);
+}
+
+.language-option.active {
+    color: var(--primary-color);
+    background: var(--bg-secondary);
+}
+
 .theme-toggle {
     background: none;
     border: none;
@@ -902,6 +968,11 @@ p {
 
     .hamburger {
         display: flex;
+    }
+    
+    .language-dropdown {
+        right: auto;
+        left: 0;
     }
 
     .hero h1 {
