@@ -477,13 +477,19 @@ p {
     color: var(--text-secondary);
 }
 
-/* University Section */
-.university {
+/* Education Section */
+.education {
     padding: 100px 0;
     background: var(--bg-primary);
 }
 
-.university-card {
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education-card {
     display: flex;
     gap: 2rem;
     align-items: center;
@@ -496,24 +502,24 @@ p {
     margin: 0 auto;
 }
 
-.university-card:hover {
+.education-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-hover);
 }
 
-.university-logo {
+.education-logo {
     font-size: 4rem;
     color: var(--primary-color);
     flex-shrink: 0;
 }
 
-.university-logo-img {
+.education-logo-img {
     width: 120px;
     height: auto;
     object-fit: contain;
 }
 
-.university-info h3 {
+.education-info h3 {
     color: var(--primary-color);
     margin-bottom: 0.5rem;
 }
@@ -531,7 +537,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.university-details p {
+.education-details p {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
 }
@@ -868,6 +874,212 @@ p {
     min-height: 120px;
 }
 
+/* Form Message Styles */
+.form-message {
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    text-align: center;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.form-message.loading {
+    background: #d1ecf1;
+    color: #0c5460;
+    border: 1px solid #bee5eb;
+}
+
+/* Success Dialog Styles */
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dialog-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dialog-content {
+    background: var(--bg-card);
+    border-radius: var(--border-radius);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    transform: scale(0.8) translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+.dialog-overlay.show .dialog-content {
+    transform: scale(1) translateY(0);
+}
+
+.dialog-header {
+    padding: 2rem 2rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.dialog-header i {
+    font-size: 3rem;
+    color: #28a745;
+    margin-bottom: 1rem;
+}
+
+.dialog-header h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.5rem;
+}
+
+.dialog-body {
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+.dialog-body p {
+    margin: 0;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.dialog-footer {
+    padding: 1rem 2rem 2rem;
+    text-align: center;
+    border-top: 1px solid var(--border-color);
+}
+
+.dialog-footer .btn {
+    min-width: 120px;
+}
+
+/* Button Loading States */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.btn-content,
+.btn-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.btn.loading .btn-content {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.btn.loading .btn-loading {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn.loading {
+    pointer-events: none;
+}
+
+/* Success Notification */
+.success-notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(135deg, #28a745, #20c997);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.3);
+    z-index: 10001;
+    transform: translateX(400px);
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    min-width: 300px;
+}
+
+.success-notification.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.success-notification .notification-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.success-notification .notification-icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.success-notification .notification-text h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.success-notification .notification-text p {
+    margin: 0;
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* Mobile notification */
+@media (max-width: 768px) {
+    .success-notification {
+        right: 10px;
+        left: 10px;
+        transform: translateY(-100px);
+        min-width: auto;
+    }
+    
+    .success-notification.show {
+        transform: translateY(0);
+    }
+}
+
 /* Footer */
 .footer {
     background: var(--bg-card);
@@ -994,7 +1206,7 @@ p {
         justify-content: center;
     }
 
-    .university-card {
+    .education-card {
         flex-direction: column;
         text-align: center;
         padding: 2rem;

@@ -36,7 +36,7 @@
                     <a href="#about" class="nav-link" data-translate="nav-about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#university" class="nav-link" data-translate="nav-university">University</a>
+                    <a href="#education" class="nav-link" data-translate="nav-education">Education</a>
                 </li>
                 <li class="nav-item">
                     <a href="#skills" class="nav-link" data-translate="nav-skills">Skills</a>
@@ -136,23 +136,39 @@
         </div>
     </section>
 
-    <!-- University Section -->
-    <section id="university" class="university">
+    <!-- Education Section -->
+    <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title" data-translate="university-title">University</h2>
-            <div class="university-content">
-                <div class="university-card">
-                    <div class="university-logo">
-                        <img src="assets/university-logo.png" alt="FPT University" class="university-logo-img">
+            <h2 class="section-title" data-translate="education-title">Education</h2>
+            <div class="education-content">
+                <div class="education-card">
+                    <div class="education-logo">
+                        <img src="assets/university-logo.png" alt="FPT University" class="education-logo-img">
                     </div>
-                    <div class="university-info">
+                    <div class="education-info">
                         <h3>FPT University</h3>
-                        <p class="degree">Bachelor of Science in Computer Science</p>
+                        <p class="degree" data-translate="university-degree">Bachelor of Science in Computer Science</p>
                         <p class="duration">2020 - 2024</p>
-                        <div class="university-details">
-                            <p><strong>GPA:</strong> 3.8/4.0</p>
-                            <p><strong>Relevant Coursework:</strong> Data Structures, Algorithms, Database Systems, Web Development, Software Engineering</p>
-                            <p><strong>Activities:</strong> Programming Club, Hackathons, Technical Events</p>
+                        <div class="education-details">
+                            <p><strong data-translate="gpa-label">GPA:</strong> 3.8/4.0</p>
+                            <p><strong data-translate="coursework-label">Relevant Coursework:</strong> <span data-translate="coursework-content">Data Structures, Algorithms, Database Systems, Web Development, Software Engineering</span></p>
+                            <p><strong data-translate="activities-label">Activities:</strong> <span data-translate="activities-content">Programming Club, Hackathons, Technical Events</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-logo">
+                        <img src="assets/highschool-logo.jpg" alt="Gia Loc Highschool" class="education-logo-img">
+                    </div>
+                    <div class="education-info">
+                        <h3 data-translate="highschool-name">Gia Loc Highschool</h3>
+                        <p class="degree" data-translate="highschool-degree">High School Diploma</p>
+                        <p class="duration">2017 - 2020</p>
+                        <div class="education-details">
+                            <p><strong data-translate="gpa-label">GPA:</strong> 8.5/10</p>
+                            <p><strong data-translate="major-label">Major:</strong> <span data-translate="highschool-major">Natural Sciences</span></p>
+                            <p><strong data-translate="achievements-label">Achievements:</strong> <span data-translate="highschool-achievements">School-level Computer Programming Encouragement Award</span></p>
                         </div>
                     </div>
                 </div>
@@ -407,30 +423,31 @@
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.</p>
+                    <h3 data-translate="contact-connect-title">Let's Connect!</h3>
+                    <p data-translate="contact-connect-description">I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.</p>
                     
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
-                            <p>your.email@example.com</p>
+                            <h4 data-translate="contact-email-label">Email</h4>
+                            <p>haivd3105@gmail.com</p>
+                            <p>duchai2004@outlook.com.vn</p>
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Phone</h4>
-                            <p>+1 (555) 123-4567</p>
+                            <h4 data-translate="contact-phone-label">Phone</h4>
+                            <p data-translate="contact-phone-number">+84 123 456 789</p>
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Location</h4>
-                            <p>Your City, Country</p>
+                            <h4 data-translate="contact-location-label">Location</h4>
+                            <p data-translate="contact-location-address">Hanoi, Vietnam</p>
                         </div>
                     </div>
                     
@@ -441,8 +458,8 @@
                         <a href="#" target="_blank" aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="#" target="_blank" aria-label="Twitter">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://t.me/dokkuhai" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
                         </a>
                         <a href="#" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
@@ -453,19 +470,26 @@
                 <div class="contact-form">
                     <form id="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" data-translate-placeholder="contact-name-placeholder" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" data-translate-placeholder="contact-email-placeholder" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" data-translate-placeholder="contact-subject-placeholder" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <textarea id="message" name="message" data-translate-placeholder="contact-message-placeholder" placeholder="Your Message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
+                        <button type="submit" class="btn btn-primary" id="submit-btn">
+                            <span class="btn-content">
+                                <i class="fas fa-paper-plane"></i> 
+                                <span data-translate="contact-send-button">Send Message</span>
+                            </span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span data-translate="contact-sending-button">Sending...</span>
+                            </span>
                         </button>
                     </form>
                 </div>
@@ -487,6 +511,8 @@
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
+
+
 
     <!-- Custom JavaScript -->
     <script src="script.js"></script>

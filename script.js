@@ -3,7 +3,7 @@ const translations = {
     en: {
         'nav-home': 'Home',
         'nav-about': 'About',
-        'nav-university': 'University',
+        'nav-education': 'Education',
         'nav-skills': 'Skills',
         'nav-projects': 'Projects',
         'nav-certificates': 'Certificates',
@@ -17,16 +17,43 @@ const translations = {
         'about-subtitle': 'Hello! I\'m a Fresher Fullstack Developer',
         'about-text1': 'I\'m passionate about creating innovative web applications and solving complex problems through code. As a recent graduate, I bring fresh perspectives and enthusiasm to every project I work on.',
         'about-text2': 'My journey in programming started during my university years, where I discovered my love for both frontend and backend development. I enjoy the entire process of building applications from conception to deployment.',
-        'university-title': 'University',
+        'education-title': 'Education',
+        'university-degree': 'Bachelor of Science in Computer Science',
+        'gpa-label': 'GPA:',
+        'coursework-label': 'Relevant Coursework:',
+        'coursework-content': 'Data Structures, Algorithms, Database Systems, Web Development, Software Engineering',
+        'activities-label': 'Activities:',
+        'activities-content': 'Programming Club, Hackathons, Technical Events',
+        'highschool-name': 'Gia Loc Highschool',
+        'highschool-degree': 'High School Diploma',
+        'major-label': 'Major:',
+        'highschool-major': 'Natural Sciences',
+        'achievements-label': 'Achievements:',
+        'highschool-achievements': 'School-level Computer Programming Encouragement Award',
         'skills-title': 'Skills & Technologies',
         'projects-title': 'Projects',
         'certificates-title': 'Certificates',
+        'contact-connect-title': 'Let\'s Connect!',
+        'contact-connect-description': 'I\'m always open to discussing new opportunities, collaborations, or just having a chat about technology.',
+        'contact-email-label': 'Email',
+        'contact-phone-label': 'Phone',
+        'contact-phone-number': '+84 123 456 789',
+        'contact-location-label': 'Location',
+        'contact-location-address': 'Hanoi, Vietnam',
+        'contact-name-placeholder': 'Your Name',
+        'contact-email-placeholder': 'Your Email',
+        'contact-subject-placeholder': 'Subject',
+        'contact-message-placeholder': 'Your Message',
+        'contact-send-button': 'Send Message',
+        'contact-sending-button': 'Sending...',
+        'success-notification-title': 'Message Sent!',
+        'success-notification-message': 'Thank you for your message! I\'ll get back to you soon.',
         'typing-phrases': ['Fullstack Developer', 'Problem Solver', 'Code Enthusiast', 'Tech Innovator', 'Creative Thinker']
     },
     vi: {
         'nav-home': 'Trang chủ',
         'nav-about': 'Về tôi',
-        'nav-university': 'Trường đại học',
+        'nav-education': 'Giáo dục',
         'nav-skills': 'Kỹ năng',
         'nav-projects': 'Dự án',
         'nav-certificates': 'Chứng chỉ',
@@ -40,16 +67,43 @@ const translations = {
         'about-subtitle': 'Xin chào! Tôi là lập trình viên Fullstack mới',
         'about-text1': 'Tôi đam mê tạo ra các ứng dụng web sáng tạo và giải quyết các vấn đề phức tạp thông qua code. Là một sinh viên vừa tốt nghiệp, tôi mang đến góc nhìn mới mẻ và sự nhiệt huyết cho mọi dự án mà tôi tham gia.',
         'about-text2': 'Hành trình lập trình của tôi bắt đầu trong những năm đại học, nơi tôi khám phá tình yêu của mình với cả frontend và backend development. Tôi thích toàn bộ quá trình xây dựng ứng dụng từ ý tưởng đến triển khai.',
-        'university-title': 'Trường đại học',
+        'education-title': 'Giáo dục',
+        'university-degree': 'Cử nhân Khoa học Máy tính',
+        'gpa-label': 'Điểm GPA:',
+        'coursework-label': 'Các môn học liên quan:',
+        'coursework-content': 'Cấu trúc dữ liệu, Thuật toán, Hệ thống cơ sở dữ liệu, Phát triển Web, Kỹ thuật phần mềm',
+        'activities-label': 'Hoạt động:',
+        'activities-content': 'Câu lạc bộ Lập trình, Hackathon, Sự kiện Công nghệ',
+        'highschool-name': 'Trường THPT Gia Lộc',
+        'highschool-degree': 'Bằng tốt nghiệp THPT',
+        'major-label': 'Chuyên ngành:',
+        'highschool-major': 'Khoa học Tự nhiên',
+        'achievements-label': 'Thành tích:',
+        'highschool-achievements': 'Đoạt giải khuyến khích lập trình tin học cấp trường',
         'skills-title': 'Kỹ năng & Công nghệ',
         'projects-title': 'Dự án',
         'certificates-title': 'Chứng chỉ',
+        'contact-connect-title': 'Hãy kết nối!',
+        'contact-connect-description': 'Tôi luôn sẵn sàng thảo luận về các cơ hội mới, hợp tác hoặc chỉ đơn giản là trò chuyện về công nghệ.',
+        'contact-email-label': 'Email',
+        'contact-phone-label': 'Điện thoại',
+        'contact-phone-number': '+84 123 456 789',
+        'contact-location-label': 'Địa chỉ',
+        'contact-location-address': 'Hà Nội, Việt Nam',
+        'contact-name-placeholder': 'Tên của bạn',
+        'contact-email-placeholder': 'Email của bạn',
+        'contact-subject-placeholder': 'Chủ đề',
+        'contact-message-placeholder': 'Tin nhắn của bạn',
+        'contact-send-button': 'Gửi tin nhắn',
+        'contact-sending-button': 'Đang gửi...',
+        'success-notification-title': 'Gửi thành công!',
+        'success-notification-message': 'Cảm ơn bạn đã gửi tin nhắn! Tôi sẽ phản hồi bạn sớm nhất có thể.',
         'typing-phrases': ['Lập trình viên Fullstack', 'Người giải quyết vấn đề', 'Người đam mê code', 'Nhà đổi mới công nghệ', 'Người tư duy sáng tạo']
     },
     ja: {
         'nav-home': 'ホーム',
         'nav-about': '私について',
-        'nav-university': '大学',
+        'nav-education': '教育',
         'nav-skills': 'スキル',
         'nav-projects': 'プロジェクト',
         'nav-certificates': '証明書',
@@ -63,10 +117,37 @@ const translations = {
         'about-subtitle': 'こんにちは！私は新人フルスタック開発者です',
         'about-text1': '私は革新的なウェブアプリケーションの作成とコードを通じた複雑な問題の解決に情熱を持っています。最近の卒業生として、私が取り組むすべてのプロジェクトに新鮮な視点と熱意をもたらします。',
         'about-text2': '私のプログラミングの旅は大学時代に始まり、そこでフロントエンドとバックエンドの両方の開発への愛を発見しました。構想から展開まで、アプリケーションを構築する全過程を楽しんでいます。',
-        'university-title': '大学',
+        'education-title': '教育',
+        'university-degree': 'コンピュータサイエンス学士',
+        'gpa-label': 'GPA:',
+        'coursework-label': '関連コース:',
+        'coursework-content': 'データ構造、アルゴリズム、データベースシステム、Web開発、ソフトウェアエンジニアリング',
+        'activities-label': '活動:',
+        'activities-content': 'プログラミングクラブ、ハッカソン、技術イベント',
+        'highschool-name': 'Gia Loc高校',
+        'highschool-degree': '高校卒業証書',
+        'major-label': '専攻:',
+        'highschool-major': '自然科学',
+        'achievements-label': '成果:',
+        'highschool-achievements': '学校レベルコンピュータプログラミング奨励賞',
         'skills-title': 'スキル＆テクノロジー',
         'projects-title': 'プロジェクト',
         'certificates-title': '証明書',
+        'contact-connect-title': 'つながりましょう！',
+        'contact-connect-description': '新しい機会、協力、または単に技術について話すことについて、いつでも議論する準備ができています。',
+        'contact-email-label': 'メール',
+        'contact-phone-label': '電話',
+        'contact-phone-number': '+84 123 456 789',
+        'contact-location-label': '場所',
+        'contact-location-address': 'ハノイ、ベトナム',
+        'contact-name-placeholder': 'お名前',
+        'contact-email-placeholder': 'メールアドレス',
+        'contact-subject-placeholder': '件名',
+        'contact-message-placeholder': 'メッセージ',
+        'contact-send-button': 'メッセージを送信',
+        'contact-sending-button': '送信中...',
+        'success-notification-title': '送信完了！',
+        'success-notification-message': 'メッセージをありがとうございます！すぐに返信いたします。',
         'typing-phrases': ['フルスタック開発者', '問題解決者', 'コード愛好家', '技術革新者', '創造的思考者']
     }
 };
@@ -79,6 +160,15 @@ function translatePage(lang) {
         const key = element.getAttribute('data-translate');
         if (translations[lang] && translations[lang][key]) {
             element.innerHTML = translations[lang][key];
+        }
+    });
+    
+    // Update placeholders
+    const placeholderElements = document.querySelectorAll('[data-translate-placeholder]');
+    placeholderElements.forEach(element => {
+        const key = element.getAttribute('data-translate-placeholder');
+        if (translations[lang] && translations[lang][key]) {
+            element.placeholder = translations[lang][key];
         }
     });
     
@@ -337,25 +427,48 @@ backToTopButton.addEventListener('click', () => {
     });
 });
 
-// Contact Form Handling
+// Contact Form Handling with FormSubmit
 const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
+    // Show loading state
+    submitBtn.classList.add('loading');
+    
     const formData = new FormData(contactForm);
-    const formObject = {};
     
-    formData.forEach((value, key) => {
-        formObject[key] = value;
-    });
+    // Add FormSubmit configuration
+    formData.append('_subject', 'New Contact Form Submission - Portfolio Website');
+    formData.append('_captcha', 'false');
+    formData.append('_template', 'table');
     
-    // Here you would typically send the form data to a server
-    // For now, we'll just show a success message
-    showFormMessage('Thank you for your message! I\'ll get back to you soon.', 'success');
-    
-    // Reset form
-    contactForm.reset();
+    try {
+        const response = await fetch('https://formsubmit.co/haivd3105@gmail.com', {
+            method: 'POST',
+            body: formData
+        });
+        
+        // Remove loading state
+        submitBtn.classList.remove('loading');
+        
+        if (response.ok) {
+            // Show success notification
+            showSuccessNotification();
+            
+            // Reset form
+            contactForm.reset();
+        } else {
+            throw new Error('Failed to send message');
+        }
+    } catch (error) {
+        // Remove loading state
+        submitBtn.classList.remove('loading');
+        
+        // Show error message
+        showFormMessage('Failed to send message. Please try again.', 'error');
+    }
 });
 
 function showFormMessage(message, type) {
@@ -390,6 +503,59 @@ function showFormMessage(message, type) {
     setTimeout(() => {
         messageElement.remove();
     }, 5000);
+}
+
+// Success Notification Functions
+function showSuccessNotification() {
+    // Remove existing notification if any
+    const existingNotification = document.querySelector('.success-notification');
+    if (existingNotification) {
+        existingNotification.remove();
+    }
+    
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = 'success-notification';
+    notification.innerHTML = `
+        <div class="notification-content">
+            <div class="notification-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="notification-text">
+                <h4 data-translate="success-notification-title">Message Sent!</h4>
+                <p data-translate="success-notification-message">Thank you for your message! I'll get back to you soon.</p>
+            </div>
+        </div>
+    `;
+    
+    // Add to body
+    document.body.appendChild(notification);
+    
+    // Translate the content
+    const titleElement = notification.querySelector('[data-translate="success-notification-title"]');
+    const messageElement = notification.querySelector('[data-translate="success-notification-message"]');
+    
+    if (translations[currentLanguage]) {
+        if (titleElement && translations[currentLanguage]['success-notification-title']) {
+            titleElement.textContent = translations[currentLanguage]['success-notification-title'];
+        }
+        if (messageElement && translations[currentLanguage]['success-notification-message']) {
+            messageElement.textContent = translations[currentLanguage]['success-notification-message'];
+        }
+    }
+    
+    // Show notification
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+    
+    // Hide notification after 4 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.remove();
+        }, 400);
+    }, 4000);
 }
 
 // Form Validation
