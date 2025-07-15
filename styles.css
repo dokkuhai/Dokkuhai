@@ -502,6 +502,55 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Technology-specific icon colors */
+.skill-item:nth-child(1) .skill-icon .fa-html5 {
+    color: #E34F26;
+}
+
+.skill-item:nth-child(2) .skill-icon .fa-css3-alt {
+    color: #1572B6;
+}
+
+.skill-item:nth-child(3) .skill-icon .fa-js-square {
+    color: #F7DF1E;
+}
+
+.skill-item:nth-child(4) .skill-icon .fa-aws {
+    color: #FF9900;
+}
+
+.skill-item:nth-child(5) .skill-icon .fa-linux {
+    color: #1793D1;
+}
+
+.skill-item:nth-child(6) .skill-icon .fa-github {
+    color: #333;
+}
+
+[data-theme="dark"] .skill-item:nth-child(6) .skill-icon .fa-github {
+    color: #fff;
+}
+
+.skill-item:nth-child(7) .skill-icon .fa-gitlab {
+    color: #FC6D26;
+}
+
+.skill-item:nth-child(8) .skill-icon .fa-java {
+    color: #007396;
+}
+
+.skill-item:nth-child(10) .skill-icon .fa-microsoft {
+    color: #00A1F1;
+}
+
+.skill-item:nth-child(11) .skill-icon .fa-hashtag {
+    color: #239120;
+}
+
+.skill-item:nth-child(12) .skill-icon .fa-android {
+    color: #A4C639;
+}
+
 .skill-item h3 {
     color: var(--text-primary);
     margin-bottom: 0.5rem;
